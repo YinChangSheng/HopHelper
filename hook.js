@@ -27,8 +27,11 @@ function slice(a) {
     return !isEmpty(val)
   }
 
-function initFormEl(selector) {
+function initFormEl(selector, ns) {
     var cacheKey = 'hop.' + selector
+    if (isNotEmpty(ns)) {
+        cacheKey += ns;
+    }
     var hopEnv = localStorage.getItem(cacheKey)
     if ( isNotEmpty(hopEnv) ) {
         $(selector).val(hopEnv)
@@ -48,15 +51,16 @@ $(function () {
             initFormEl('#apiVersion')
         }
         if (location.pathname === '/test.do') {
-            initFormEl('#userName')
-            initFormEl('#appv')
-            initFormEl('#deviceId')
-            initFormEl('#model')
-            initFormEl('#os')
-            initFormEl('#password')
-            initFormEl('#osv')
-            initFormEl('#data')
-            initFormEl('#appKey')
+            var apiId = location.search
+            initFormEl('#userName', apiId)
+            initFormEl('#appv', apiId)
+            initFormEl('#deviceId', apiId)
+            initFormEl('#model', apiId)
+            initFormEl('#os', apiId)
+            initFormEl('#password', apiId)
+            initFormEl('#osv', apiId)
+            initFormEl('#data', apiId)
+            initFormEl('#appKey', apiId)
             $('#submit').trigger('click')
         }
     }, 200)
