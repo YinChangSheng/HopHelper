@@ -47,3 +47,8 @@ HOP助手-Chrome扩展
     - new: add-update.do (新增页面) 添加了入参的 json => param 的支持，目前不支持复杂对象类型的自动填充 - 木鸢的需求
     - new: 支持复杂对象的备注填充满足[json5][http://hjson.org/]规范
     - new: 添加新增接口的部分记忆功能
+
+
+## Other
+
+hipac同学可以登录文档中心 搜索"HOP小助手-Chrome扩展" 查看安装方法
