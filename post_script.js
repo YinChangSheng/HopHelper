@@ -8,5 +8,7 @@ var loadScript = function(filename) {
   var doc = document.head || document.documentElement;
   return doc.appendChild(s);
 }
+
 // test
+loadScript('hjson.min.js');
 loadScript('hook.js');

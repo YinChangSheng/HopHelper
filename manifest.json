@@ -5,7 +5,7 @@
   "permissions": [
     "http://*.hipac.cn/"
   ],
-  "web_accessible_resources": ["post_script.js", "hook.js"],
+  "web_accessible_resources": ["post_script.js", "hook.js", "hjson.min.js"],
   "content_scripts": [{
     "matches": ["http://*.hipac.cn/*"],
     "js": ["post_script.js"],
