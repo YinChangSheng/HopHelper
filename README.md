@@ -11,7 +11,8 @@ HOP助手-Chrome扩展
     "pageSize": 10 // 页记录大小
 }
 ```
-![简单json的填充](./docs/WX20180507-172613.png)
+
+![复杂json的填充](./docs/WX20180507-172700.png)
 
 ```json5
 // 复杂json的填充
@@ -34,7 +35,7 @@ HOP助手-Chrome扩展
     }
 }
 ```
-![复杂json的填充](./docs/WX20180507-172700)
+![简单json的填充](./docs/WX20180507-172613.png)
 
 ## changelog
 + 2018-05-03 v0.1
