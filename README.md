@@ -2,8 +2,9 @@
 HOP助手-Chrome扩展
 
 ## 通过json反生成参数表单
+
+### 1. 简单 json 的填充
 ```json5
-// 简单 json 的填充
 {
     "workId": "4389rfda47575647i4214809328582ru", // 工单ID
     "shopId": "dj3ks7bf8j6s29821y782k3cun27cht2"    // 商品列表
@@ -14,9 +15,8 @@ HOP助手-Chrome扩展
 
 ![复杂json的填充](./docs/WX20180507-172700.png)
 
+### 2. 复杂json的填充
 ```json5
-// 复杂json的填充
-
 {
     "taskUserId": "4fd3k1k837h4fk2cwtwnvg1297491nr211jz",    // 操作人
     // 业务店铺信息
