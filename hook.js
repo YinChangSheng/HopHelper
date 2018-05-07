@@ -1,7 +1,7 @@
     
-function slice(a) {
-    return Array.prototype.slice.call(arguments)
-}
+    function slice(a) {
+        return Array.prototype.slice.call(arguments)
+    }
 
     function isXX(val, xxx) {
     return Object.prototype.toString.call(val) === '[object '+ xxx +']'
@@ -52,15 +52,15 @@ $(function () {
         }
         if (location.pathname === '/test.do') {
             var apiId = location.search
-            initFormEl('#userName', apiId)
-            initFormEl('#appv', apiId)
-            initFormEl('#deviceId', apiId)
-            initFormEl('#model', apiId)
-            initFormEl('#os', apiId)
-            initFormEl('#password', apiId)
-            initFormEl('#osv', apiId)
+            initFormEl('#userName')
+            initFormEl('#appv')
+            initFormEl('#deviceId')
+            initFormEl('#model')
+            initFormEl('#os')
+            initFormEl('#password')
+            initFormEl('#osv')
             initFormEl('#data', apiId)
-            initFormEl('#appKey', apiId)
+            initFormEl('#appKey')
             $('#submit').trigger('click')
         }
     }, 200)
