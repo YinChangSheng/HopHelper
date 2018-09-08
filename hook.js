@@ -1,47 +1,47 @@
     
     
-    function slice(a) {
-        return Array.prototype.slice.call(arguments)
-    }
+function slice(a) {
+    return Array.prototype.slice.call(arguments)
+}
 
-    function isXX(val, xxx) {
-    return Object.prototype.toString.call(val) === '[object '+ xxx +']'
-  }
-  
-  function isNull(val) {
-    return isXX(val, 'Null')
-  }
+function isXX(val, xxx) {
+return Object.prototype.toString.call(val) === '[object '+ xxx +']'
+}
 
-  function isObject(val) {
-    return isXX(val, 'Object')
-  }
-  
-  function isArray(val) {
-    return isXX(val, 'Array')
-  }
+function isNull(val) {
+return isXX(val, 'Null')
+}
 
-  function isUndefined(val) {
-    return isXX(val, 'Undefined')
-  }
+function isObject(val) {
+return isXX(val, 'Object')
+}
 
-  function isString(val) {
-    return isXX(val, 'String')
-  }
+function isArray(val) {
+return isXX(val, 'Array')
+}
 
-  function isEmptyString(val) {
-    return isString(val) && val.length === 0
-  }
-  
-  function isEmpty(val) {
-    return isUndefined(val) || isNull(val) || isEmptyString(val)
-  }
-  
-  function isNotEmpty(val) {
-    return !isEmpty(val)
-  }
+function isUndefined(val) {
+return isXX(val, 'Undefined')
+}
 
-  function isPrimitive(test) {
-    return (test !== Object(test));
+function isString(val) {
+return isXX(val, 'String')
+}
+
+function isEmptyString(val) {
+return isString(val) && val.length === 0
+}
+
+function isEmpty(val) {
+return isUndefined(val) || isNull(val) || isEmptyString(val)
+}
+
+function isNotEmpty(val) {
+return !isEmpty(val)
+}
+
+function isPrimitive(test) {
+return (test !== Object(test));
 }
 
 function initFormEl(selector, ns) {
